@@ -37,7 +37,7 @@ public class Votacion extends javax.swing.JFrame {
         btn3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGEN/Lista1.PNG"))); // NOI18N
         btn1.addActionListener(new java.awt.event.ActionListener() {
@@ -122,6 +122,7 @@ public class Votacion extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println(votacion);
         votar.votar(Login.getHashEmpadronado(), votacion);
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

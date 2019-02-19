@@ -7,6 +7,7 @@ package FRM;
 
 import Logica.LogicaPersona;
 import Modelo.Persona;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -16,6 +17,12 @@ import Modelo.Persona;
 public class Frmregistro extends javax.swing.JFrame {
     Persona persona=new Persona();
     LogicaPersona insert=new LogicaPersona();
+    public void limpiar(){
+        txtApellido.setText("");
+        txtNombre.setText("");
+        txtDni.setText("");
+        txtCorreo.setText("");
+    }
     /**
      * Creates new form Frmregistro
      */
@@ -42,7 +49,7 @@ public class Frmregistro extends javax.swing.JFrame {
         txtCorreo = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("DNI:");
 
@@ -117,6 +124,8 @@ public class Frmregistro extends javax.swing.JFrame {
         persona.setCorreo(txtCorreo.getText());
         persona.crearHash(persona);
         insert.InsertPersona(persona);
+        limpiar();
+        
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -90,7 +90,7 @@ public class Main {
                         String g = GB.guardarbloque(CBD1, CBD2, CBD3, CBD4, hash_merkle, timestamp, previushash, nonce, hash_bloque, num_transacciones);
                         System.out.println("--------Registro de bloque");
                         System.out.println(g);
-                        if (g == "Registro exitoso") {
+                        if (g==("Registro exitoso")) {
 //Obtiene el id del bloque que se guardó
                             ObtenerID OID = new ObtenerID();
                             int id = OID.obtenerid(CBD1, CBD2, CBD3, CBD4, previushash);

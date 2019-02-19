@@ -47,7 +47,7 @@ public class Login extends javax.swing.JFrame {
         txtContraseña = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Correo:");
 
@@ -106,6 +106,7 @@ public class Login extends javax.swing.JFrame {
                 
                 Votacion votacion = new Votacion();
                 votacion.setVisible(true);
+                this.dispose();
 
             
             
