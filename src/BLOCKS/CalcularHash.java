@@ -11,7 +11,8 @@ import java.security.MessageDigest;
  *
  * @author ACER
  */
-public class CalcularHash {
+public class CalcularHash {/*se encarga de calcular el SHA-256
+    */
     public static String sha256(String base){
         try{
             MessageDigest digest=MessageDigest.getInstance("SHA-256");

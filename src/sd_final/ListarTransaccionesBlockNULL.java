@@ -16,7 +16,9 @@ import java.util.List;
  *
  * @author ACER
  */
-class ListarTransaccionesBlockNULL {
+class ListarTransaccionesBlockNULL {/*
+    es la que se encarga de seleccionar las transacciones que no tengan un id de bloque asignado
+    */
 
     public List ListaTransaccionesBloqueNULL(Connection CBD1, Connection CBD2, Connection CBD3, Connection CBD4) {
         Statement LTst1 = null, LTst2 = null, LTst3 = null, LTst4 = null;

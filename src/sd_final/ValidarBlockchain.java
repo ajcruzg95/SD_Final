@@ -16,7 +16,10 @@ import java.util.List;
  *
  * @author ACER
  */
-class ValidarBlockchain {
+class ValidarBlockchain {/*clase encargada de validar cada una de las cadenas de los bloques,
+    si las transacciones fueron alterados o no
+    
+    */
 
     public boolean ValidarBD1(Connection CBD1, Connection CBD2, Connection CBD3, Connection CBD4) {
         String hash_calculado = null, hash_guardado;

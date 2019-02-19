@@ -14,7 +14,10 @@ import java.sql.Statement;
  *
  * @author ACER
  */
-class Previushash {
+class Previushash {/*
+    es la que se encarga de obtener el previushash del bloque anterior
+    para posterior guardarlo en el nuevo bloque
+    */
 
     public String Previushash(Connection CBD1, Connection CBD2, Connection CBD3, Connection CBD4) throws SQLException {
         Statement PBst1 = null, PBst2 = null, PBst3 = null, PBst4 = null;

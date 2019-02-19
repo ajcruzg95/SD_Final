@@ -12,7 +12,9 @@ import java.sql.DriverManager;
  *
  * @author ACER
  */
-public class ConexionBlockchain {
+public class ConexionBlockchain {/*
+    es la que se encarga realizar la conexión de toda la cadena de bloques
+    */
 
     private Connection conexBD1 = null;
     private Connection conexBD2 = null;

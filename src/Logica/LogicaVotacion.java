@@ -29,7 +29,10 @@ public class LogicaVotacion {
     Connection CBD4 = BD2.conectarBD4();
 
     
-    
+    /*
+    es una operación del web service que se encarga de registrar 
+    cada una de las transacciones (votos) en la Blockchain
+    */
     public void votar(String origen,String destino){
         int band=0;
         String respuesta="";

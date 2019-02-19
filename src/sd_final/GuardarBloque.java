@@ -13,7 +13,9 @@ import java.sql.SQLException;
  *
  * @author ACER
  */
-class GuardarBloque {
+class GuardarBloque {/*encargada de guardar el bloque se llama a esta clase 
+    despues de validar el blockchain
+    */
 
     public String guardarbloque(Connection CBD1, Connection CBD2, Connection CBD3, Connection CBD4, String hash_merkle, String timestamp, String previushash, int nonce, String hash_bloque, int cant_transacciones) {
         PreparedStatement GBpst1 = null, GBpst2 = null, GBpst3 = null, GBpst4 = null;

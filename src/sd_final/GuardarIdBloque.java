@@ -14,7 +14,9 @@ import java.util.List;
  *
  * @author ACER
  */
-class GuardarIdBloque {
+class GuardarIdBloque {/*es la que se encarga de guardar el id de bloque en las transacciones 
+    escogidas, se llama a esta clase después de guardar el bloque
+    */
 
     public String guardaridbloque(Connection CBD1, Connection CBD2, Connection CBD3, Connection CBD4, int id_bloque, List lista) {
         PreparedStatement GIBpst1 = null, GIBpst2 = null, GIBpst3 = null, GIBpst4 = null;

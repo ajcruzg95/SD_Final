@@ -17,7 +17,12 @@ import java.util.logging.Logger;
  *
  * @author ACER
  */
-class BackupRestore {
+class BackupRestore {/*
+    es la que se encarga de recuperar la cadena de bloques, se ejecuta 
+    solo si la validación detecta que la cadena de bloques esta alterada, 
+    se coloca como primer parámetro la cadena de bloques invalida seguido de la cadena 
+    de bloques valida
+    */
     //Parametro 1 -> BD alterada, Parametro 2 -> BD buena
 
     public static void restore(Connection c1, Connection c2) {

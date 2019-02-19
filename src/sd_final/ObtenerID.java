@@ -14,7 +14,10 @@ import java.sql.Statement;
  *
  * @author ACER
  */
-class ObtenerID {
+class ObtenerID {/*
+    es la que se encarga de obtener id en base al 
+    previushash asignado para posterior guardar el id de bloque en las transacciones
+    */
 
     public int obtenerid(Connection CBD1, Connection CBD2, Connection CBD3, Connection CBD4, String previushash) {
         int id = 0;
