@@ -44,7 +44,7 @@ CREATE TABLE `Bloques`
 (
   `id_bloque` Int(11) NOT NULL AUTO_INCREMENT,
   `hash_merkle` Varchar(255),
-  `timestamp` Char(20),
+  `timestamp` Char(255),
   `previushash` Varchar(255),
   `nonce` Int(11),
   `hash_bloque` Varchar(255),
